@@ -7,8 +7,6 @@ const Home = () => {
             </div>
             <div className={styles.main_container}>
                 <div className={styles.left_side}>
-                    <div className='mm'>
-
                     <h3>Your Path To Academic Excellence</h3>
                     <div className={styles.text_container} >
                             <ul>
@@ -23,8 +21,6 @@ const Home = () => {
                                 Our focus is on creating an environment where passion for education thrives.</li>
                             </ul>
                     </div>
-                    </div>
-
                 </div>
                 <div className={styles.right_side}>
                     <div className={styles.clip_container}>

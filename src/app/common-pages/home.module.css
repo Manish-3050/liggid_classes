@@ -36,8 +36,9 @@
     margin-bottom: 0px;
 }
   .left_side h3{
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 0px 0px;
     text-align: center;
+    font-size: xx-large;
   }
   .right_side {
     width: 35%;
@@ -59,6 +60,7 @@
 }
 
 .text_container li {
+  font-size: medium;
     line-height: 1.2; /* Adjust this value to your desired line height */
     margin-bottom: 10px; /* Optional: Add margin between list items for better spacing */
 }
