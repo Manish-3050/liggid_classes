@@ -1,0 +1,235 @@
+/* .home{
+    background-color: aqua;
+    width: 100%;
+    height: 60vh;
+} */
+.home {
+    background-image: url('/docs/images/school3.jpg'); /* Update the path to your image */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 70vh; /* Makes the div at least as tall as the viewport height */
+    display: flex; /* Optional: Center content if needed */
+    align-items: center; /* Optional: Center content vertically */
+    justify-content: center; /* Optional: Center content horizontally */
+    color: white; /* Optional: Change text color for contrast against the background */
+  }
+
+
+.main_container {
+    display: flex; /* Enable Flexbox layout */
+    height: 60vh;
+    border-radius: 20px;
+    background-color:rgba(253, 127, 24, 0.979);
+  }
+  
+  .left_side,
+  .right_side {
+     /* Optional: Add padding inside each div */
+     height: 60vh;
+  }
+  
+  .left_side {
+    width: 65%;
+ /* Optional: Add a background color */
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+  .left_side h3{
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+  }
+  .right_side {
+    width: 35%;
+    /* background-color: lightcoral; Optional: Add a background color */
+    position: relative; /* Position the container relative to position the circle absolutely */
+    display: flex;
+}
+  
+  .text_container {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 800px;
+    padding-left: 20px;
+  }
+  
+  .text_container ul {
+    padding-left: 20px; /* Optional: Add padding to align list items nicely */
+}
+
+.text_container li {
+    line-height: 1.2; /* Adjust this value to your desired line height */
+    margin-bottom: 10px; /* Optional: Add margin between list items for better spacing */
+}
+
+
+  
+  .clip_container {
+    padding: 0px;
+    margin: 0px;
+    position: relative; /* Container for positioning the image */
+    width: 100%; /* Width of the container */
+
+  }
+  
+  .image {
+    position: absolute; /* Position image absolutely */
+    bottom: 0; /* Align the image to the bottom of the container */
+    width: 100%; /* Full width of the container */
+    height: 55vh;
+  }
+  
+  
+  .helping_child {
+    display: flex; /* Enable Flexbox layout */
+    height: 60vh;
+  }
+
+  .helping_child_left_side,
+  .helping_child_right_side {
+    flex: 1; /* Distribute space equally */
+     /* Optional: Add padding inside each div */
+     height: 60vh;
+     background-color: aqua;
+  }
+
+
+  .helping_child_left_side {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height or adjust as needed */
+  }
+  
+  .helping_child_image {
+    position: relative; /* For positioning the image inside */
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    overflow: hidden; /* Hide any overflow */
+    background-color: aqua;
+  }
+  
+  .helping_child_image image {
+    margin: 0px;
+    width: 100%; /* Make the image fill the width of the container */
+    height: 100%; /* Make the image fill the height of the container */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  }
+  
+.helping_container_text{
+    padding: 30px;
+    text-align: left;
+}
+
+.help{
+  display: flex;
+}
+
+.left_help_section{
+  width: 40%;
+  height: 70vh;
+}
+.right_help_section{
+  background-color: rgb(192, 191, 191);
+  width: 60%;
+  height: 100%;
+}
+
+.left_help_section img{
+  object-fit: contain; 
+  height: 90vh;
+  width: 100%;
+}
+.science{
+  text-align: center;
+  justify-content: center;
+}
+.science img{
+  object-fit: contain; 
+  height: 10vh;
+  width: auto;
+}
+
+.right_container_top{
+  margin: 10px 150px 50px 150px;
+  background-color: rgb(241, 104, 40);
+  z-index: 10;
+  text-align: center;
+  border-radius: 20px;
+  height: 30vh;
+  box-shadow: 20px 20px lightblue;
+  transition: transform 0.3s ease-in-out;
+}
+
+.right_container_top:hover {
+  transform: scale(1.04);
+}
+
+.right_container_top{
+  padding-top: 30px;
+  margin-top: 20px;
+  color: #f0f0f0;
+}
+
+
+
+.right_container_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px; 
+  padding-right: 20px; 
+}
+
+.item {
+  flex: 0 1 calc(30% - 10px); 
+  margin-bottom: 20px;
+  background-color: #f0f0f0; 
+  padding: 10px;
+  box-sizing: border-box; 
+  height: 20vh;
+  border-radius: 20px;
+  box-shadow: 8px 8px lightblue;
+  transition: transform 0.3s ease-in-out;
+  max-width: 200px;
+}
+
+.item:hover {
+  transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+  .item {
+    flex: 0 1 calc(50% - 10px);
+  }
+  .right_container_top{
+      margin: 10px 50px 50px 50px;
+
+  }
+}
+
+
+
+@media screen and (max-width: 524px) {
+  .help{
+      display: block;
+  }
+  .left_help_section{
+      background-color: antiquewhite;
+      width: 100%;
+      height: 70vh;
+  }
+  .right_help_section{
+      background-color: rgb(228, 135, 14);
+      width: 100%;
+      height: 70vh;
+  }
+}
+
+@media screen and (max-width: 999px) {
+
+  .right_container_top{
+      margin: 10px 50px 50px 50px;
+  }
+}

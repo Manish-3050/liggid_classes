@@ -1,0 +1,93 @@
+/* Navbar.module.css */
+
+.nav {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(253, 127, 24, 0.979);
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+  }
+  
+  .cntrNav {
+    display: flex;
+    gap: 3vw;
+    padding: 0px 20px;
+  }
+  
+  .cntrNav a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Mobile menu styles */
+  .hamburgerMenu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Mobile menu container */
+  .mobileMenu {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    background-color: rgb(250, 67, 67);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .mobileMenu a {
+    display: block;
+    padding: 1rem;
+    font-size: 4vw;
+  }
+  
+  /* Active class for showing the menu */
+  .active {
+    display: block;
+  }
+  
+  /* Media queries */
+  @media (max-width: 500px) {
+    .nav {
+      padding: 0vw 5vw;
+    }
+  
+    .logo {
+      font-size: 4vw;
+    }
+  
+    .cntrNav {
+      display: none;
+    }
+  
+    .hamburgerMenu {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      padding: 0vw 2vw;
+    }
+  
+    .logo {
+      font-size: 5vw;
+    }
+  
+    .cntrNav a {
+      font-size: 5vw;
+    }
+  }
+  
