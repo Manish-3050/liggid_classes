@@ -20,13 +20,14 @@
     display: flex; /* Enable Flexbox layout */
     height: 60vh;
     border-radius: 20px;
-    background-color:rgba(253, 127, 24, 0.979);
+    background-color:#2d333a;
+    color: white;
   }
   
   .left_side,
   .right_side {
      /* Optional: Add padding inside each div */
-     height: 60vh;
+     height: 100%;
   }
   
   .left_side {
@@ -38,7 +39,7 @@
   .left_side h3{
     padding: 20px 20px 0px 0px;
     text-align: center;
-    font-size: xx-large;
+    font-size: 3vmax;
   }
   .right_side {
     width: 35%;
@@ -48,11 +49,12 @@
 }
   
   .text_container {
-    font-size: 12px;
+    font-size: 5vmax;
     line-height: 1.5;
     color: #333;
     max-width: 800px;
     padding-left: 20px;
+    color: white;
   }
   
   .text_container ul {
@@ -60,7 +62,7 @@
 }
 
 .text_container li {
-  font-size: medium;
+  font-size: 2vmax;
     line-height: 1.2; /* Adjust this value to your desired line height */
     margin-bottom: 10px; /* Optional: Add margin between list items for better spacing */
 }
@@ -93,7 +95,6 @@
     flex: 1; /* Distribute space equally */
      /* Optional: Add padding inside each div */
      height: 60vh;
-     background-color: aqua;
   }
 
 
@@ -109,7 +110,6 @@
     width: 100%; /* Adjust the width as needed */
     height: 100%; /* Adjust the height as needed */
     overflow: hidden; /* Hide any overflow */
-    background-color: aqua;
   }
   
   .helping_child_image image {
@@ -126,31 +126,33 @@
 
 .help{
   display: flex;
+  width: 100vw;
 }
 
 .left_help_section{
   width: 40%;
-  height: 70vh;
+  height: 100vh;
+  background-color: antiquewhite;
 }
 .right_help_section{
-  background-color: rgb(192, 191, 191);
   width: 60%;
-  height: 100%;
+  height: 100vh;
 }
 
 .left_help_section img{
   object-fit: contain; 
-  height: 90vh;
+  height: 100vh;
   width: 100%;
 }
 .science{
+  margin-top: 8%;
   text-align: center;
   justify-content: center;
 }
 .science img{
   object-fit: contain; 
-  height: 10vh;
-  width: auto;
+  height: 10%;
+  width: 60%;
 }
 
 .right_container_top{
@@ -180,21 +182,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 20px; 
-  padding-right: 20px; 
+  padding-left: 5%; 
+  padding-right: 5%; 
 }
 
 .item {
   flex: 0 1 calc(30% - 10px); 
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   background-color: #f0f0f0; 
-  padding: 10px;
+  margin-right: 1%;
   box-sizing: border-box; 
-  height: 20vh;
+  height: 20%;
   border-radius: 20px;
   box-shadow: 8px 8px lightblue;
   transition: transform 0.3s ease-in-out;
-  max-width: 200px;
 }
 
 .item:hover {
@@ -219,13 +220,13 @@
   }
   .left_help_section{
       background-color: antiquewhite;
-      width: 100%;
-      height: 70vh;
+      width: 100vw;
+      height: 100vh;
   }
   .right_help_section{
       background-color: rgb(228, 135, 14);
-      width: 100%;
-      height: 70vh;
+      width: 100vw;
+      height: 100vh;
   }
 }
 
@@ -233,5 +234,33 @@
 
   .right_container_top{
       margin: 10px 50px 50px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .left_side h3{
+    padding: 20px 20px 0px 10px;
+    text-align: center;
+    font-size: 3vmax;
+  }
+  .main_container {
+    display: block; /* Enable Flexbox layout */
+    height: 100vh;
+  }
+  .left_side{
+    height: 50%;
+    width: 100vw;
+    line-height: 2;
+  }
+  .right_side {
+     /* Optional: Add padding inside each div */
+     height: 50%;
+  }
+  .image {
+    position: absolute; /* Position image absolutely */
+    bottom: 0; /* Align the image to the bottom of the container */
+    width: 100vw; /* Full width of the container */
+    height: 100%;
   }
 }
