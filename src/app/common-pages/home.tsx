@@ -5,9 +5,10 @@ const Home = () => {
             <div className={styles.home}>
                 <h1>Give Yourself New Opportunity Each Day</h1>
             </div>
+            <div className={styles.academic}>
+            <h3>Your Path To Academic Excellence</h3>
             <div className={styles.main_container}>
                 <div className={styles.left_side}>
-                    <h3>Your Path To Academic Excellence</h3>
                     <div className={styles.text_container} >
                             <ul>
                                 <li>
@@ -27,8 +28,7 @@ const Home = () => {
                         <img src="/docs/images/teacher2.png" alt="Overlay Image" className={styles.image} />
                     </div>
                 </div>
-
-
+            </div>
             </div>
 
 
@@ -54,15 +54,15 @@ const Home = () => {
 
 <div>
             <div className={styles.help}>
-                <div className={styles.left_help_section}>
+                {/* <div className={styles.left_help_section}>
                     <div>
-                    <img src="/docs/images/student_teacher.jpg" alt="" />                     
+                    <img src="/docs/images/subjects.jpg" alt="" />                     
                     </div>
-                </div>
+                </div> */}
                 <div className={styles.right_help_section}>
                     <div>
                         <div className={styles.right_container_top}>
-                            <h1> Web Development </h1>
+                            <h1>Subjects We Offer </h1>
                         </div>
                         <div className={styles.right_container_bottom}>
                             <div className={styles.item}>
@@ -86,7 +86,9 @@ const Home = () => {
                             <div className={styles.item}>
                             <div className={styles.science}>
                                     <img src="/docs/images/mapping-and-geography-svgrepo-com.svg" alt="" />
-                                    <h3>Social</h3>
+                                    <h3>
+                                        Geography
+                                    </h3>
                                 </div>
                             </div>
                             <div className={styles.item}>

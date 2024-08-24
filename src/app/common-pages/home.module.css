@@ -19,10 +19,16 @@
 .main_container {
     display: flex; /* Enable Flexbox layout */
     height: 60vh;
-    border-radius: 20px;
     background-color:#2d333a;
     color: white;
   }
+
+.academic{
+  margin: 0%;
+  background-color:#2d333a;
+  border-radius: 20px;
+  justify-content: center;
+}
   
   .left_side,
   .right_side {
@@ -36,10 +42,11 @@
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-  .left_side h3{
+  .academic h3{
     padding: 20px 20px 0px 0px;
     text-align: center;
     font-size: 3vmax;
+    color:white;
   }
   .right_side {
     width: 35%;
@@ -62,7 +69,7 @@
 }
 
 .text_container li {
-  font-size: 2vmax;
+    font-size: 2vmax;
     line-height: 1.2; /* Adjust this value to your desired line height */
     margin-bottom: 10px; /* Optional: Add margin between list items for better spacing */
 }
@@ -135,7 +142,7 @@
   background-color: antiquewhite;
 }
 .right_help_section{
-  width: 60%;
+  width: 100%;
   height: 100vh;
 }
 
@@ -156,14 +163,25 @@
 }
 
 .right_container_top{
+  background-image: url('/docs/images/subjects.jpg'); /* Update the path to your image */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: top; /* Centers the image */
+  background-repeat: no-repeat;
   margin: 10px 150px 50px 150px;
-  background-color: rgb(241, 104, 40);
   z-index: 10;
   text-align: center;
   border-radius: 20px;
-  height: 30vh;
-  box-shadow: 20px 20px lightblue;
+  height: 40vmax;
+  box-shadow: 20px 20px #32393d;
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.right_container_top h1{
+  color: #2d333a;
+  font-size: 4vw;
+  padding-right: 5%;
 }
 
 .right_container_top:hover {
@@ -194,7 +212,7 @@
   box-sizing: border-box; 
   height: 20%;
   border-radius: 20px;
-  box-shadow: 8px 8px lightblue;
+  box-shadow: 8px 8px #32393d;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -207,8 +225,8 @@
     flex: 0 1 calc(50% - 10px);
   }
   .right_container_top{
-      margin: 10px 50px 50px 50px;
-
+    margin: 0px;
+    padding: 0px;
   }
 }
 
@@ -224,7 +242,6 @@
       height: 100vh;
   }
   .right_help_section{
-      background-color: rgb(228, 135, 14);
       width: 100vw;
       height: 100vh;
   }
@@ -237,6 +254,7 @@
   }
 }
 
+
 @media screen and (max-width: 500px) {
 
   .left_side h3{
@@ -246,11 +264,11 @@
   }
   .main_container {
     display: block; /* Enable Flexbox layout */
-    height: 100vh;
+    height: 70vh;
   }
   .left_side{
     height: 50%;
-    width: 100vw;
+    width: auto;
     line-height: 2;
   }
   .right_side {
