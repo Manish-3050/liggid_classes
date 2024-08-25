@@ -32,20 +32,24 @@ const Home = () => {
             </div>
             <div className={styles.why_us}>
                 <div className={styles.empower_learning}>
-                    <h2>Empower Your Learning</h2>
+                    <h2>Elevate Learning</h2>
                     <p>Empower Your Learning Journey with Expert Tuition in Delhi! .
-                    We provide Everything You Need to Learn Anything with Personalized Tutoring for School-Level Subjects.
+                        We provide Everything You Need to Learn Anything with Personalized Tutoring for School-Level Subjects.
                     </p>
                     <div className={styles.empower_learning_buttons}>
-                        <button>Start Learnings</button>
+                        <button> Start Learnings</button>
                         <button>Discover Cources</button>
                     </div>
 
                 </div>
-                <div className={styles.why_us_comtainer}>
-                    <p>guigouigouigouiguioguigui</p>
+                <div className={styles.empower_learning}>
+                    <h2>We Provide</h2>
+                    <p>1. One-on-One Tutoring</p>
+                    <p>2. Group Tutoring</p>
+                    <p>3. Test Preparation</p>
+                    <p>4. Subject-Specific Tutoring</p>
+                    <p>5. Homework Help</p>
                 </div>
-
             </div>
 
             <div>
@@ -102,6 +106,79 @@ const Home = () => {
                             </div>
 
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.why_us_comtainer}>
+                <div className={styles.why_us_heading}>
+                    <h2>Why Choose Us</h2>
+                </div>
+                <div className={styles.why_us_container}>
+                    <div className={styles.content_container}>
+                        <div className={styles.content_heading}>
+                            <h5>Expert Tutors</h5>
+                            <p>Qualified Professionals</p>
+                            <p>Proven Track Record</p>
+                        </div>
+                        <div className={styles.content_description}>
+                            <p>Our team of highly qualified and experienced tutors are experts in their fields. They bring both academic knowledge and practical experience to help students excel in their studies.</p>
+                        </div>
+
+                    </div>
+                    <div className={styles.content_container}>
+                        <div className={styles.content_heading}>
+                        <h5>Personalized Learning</h5>
+                            <p>Custom Study Plans</p>
+                            <p>One-on-One Attention</p>
+                        </div>
+                        <div className={styles.content_description}>
+                            <p>We believe that each student has unique needs and learning styles. Our tutoring approach is tailored to fit the individual requirements of every student.</p>
+                        </div>
+
+                    </div>
+                    <div className={styles.content_container}>
+                        <div className={styles.content_heading}>
+                            <h5>Flexible Scheduling</h5>
+                            <p>Various Time Slots</p>
+                            <p>Online and In-Person Options</p>
+                        </div>
+                        <div className={styles.content_description}>
+                            <p>Balancing school, activities, and family can be challenging. Our flexible scheduling options make it easy for students to fit tutoring sessions into their busy lives.</p>
+                        </div>
+
+                    </div>
+                    <div className={styles.content_container}>
+                        <div className={styles.content_heading}>
+                            <h5>Proven Results</h5>
+                            <p>Improved Grades</p>
+                            <p>Positive Feedback</p>
+                        </div>
+                        <div className={styles.content_description}>
+                            <p>We are committed to helping students achieve their academic goals. Our approach has led to measurable improvements and success stories.</p>
+                        </div>
+
+                    </div>
+                    <div className={styles.content_container}>
+                        <div className={styles.content_heading}>
+                            <h5>Comprehensive Resources</h5>
+                            <p>Study Materials</p>
+                            <p>Practice Tests</p>
+                        </div>
+                        <div className={styles.content_description}>
+                            <p>Our tutoring services are backed by a wealth of resources to support student learning both inside and outside of sessions.</p>
+                        </div>
+                    </div>
+                    <div className={styles.content_container}>
+                        <div className={styles.content_heading}>
+                            <h5>Supportive Environment</h5>
+                            <p>Encouraging Atmosphere</p>
+                            <p>Open Communication</p>
+                        </div>
+                        <div className={styles.content_description}>
+                            <p>We create a positive and encouraging learning environment where students feel comfortable and motivated to succeed.</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
