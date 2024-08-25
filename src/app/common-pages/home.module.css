@@ -220,6 +220,84 @@
   transform: scale(1.04);
 }
 
+
+.why_us{
+  width: 100vw;
+  display: flex;
+  height: auto;
+
+}
+.empower_learning{
+  margin: 5%;
+  width: 50%;
+  background-color: #2d333a;
+  border-radius: 20px;
+  box-shadow:8px 8px #4b5057;
+  text-align: center;
+  position: relative; /* For hover effects to apply correctly */
+  
+}
+.why_us_comtainer{
+  width: 50%;
+  background-color: aquamarine;
+}
+
+.empower_learning h2{
+  color: white;
+  font-size: 4vmin;
+}
+.empower_learning p{
+  color: white;
+  font-size: 2.5vmin;
+  text-align: left;
+  line-height: 1.5;
+  padding: 0px 5px 10px 10px;
+  position: relative;
+}
+
+.empower_learning_buttons{
+  display: flex;
+  justify-content: space-evenly; /* Equal space between buttons */
+  align-items: center; /* Vertically center the buttons */
+  gap: 10px;
+  position: relative;
+
+}
+
+.empower_learning_buttons button{
+width: 40%;
+display: flex;
+justify-content: center; /* Equal space between buttons */
+align-items: center; /* Vertically center the buttons */
+gap: 20px;
+font-size: 2.5vmin;
+border-radius: 20px;
+position: relative;
+padding: 2vmin;
+}
+
+.empower_learning:hover{
+
+  background-color: white;
+}
+
+.empower_learning:hover h2 {
+  color: #2d333a; /* Color when parent is hovered */
+}
+.empower_learning:hover p {
+  color: #2d333a; /* Color when parent is hovered */
+}
+.empower_learning_buttons:hover button {
+  background-color: #2d333a;
+  color: white;
+}
+
+.empower_learning:hover .empower_learning_buttons button {
+  background-color: #2d333a; /* Button background color on hover */
+  color: #fff; /* Button text color on hover */
+}
+
+
 @media (max-width: 600px) {
   .item {
     flex: 0 1 calc(50% - 10px);
@@ -244,6 +322,17 @@
   .right_help_section{
       width: 100vw;
       height: 100vh;
+  }
+  .why_us{
+    display: block;
+    height: auto;
+  
+  }
+  .empower_learning{
+    width: 90%;
+  }
+  .why_us_comtainer{
+    width: 100%;
   }
 }
 
